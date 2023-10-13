@@ -1,10 +1,31 @@
-- 👋 Hi, I’m @Onic1980
-- 👀 I’m interested in neural nets and deep machine learning (AI)
-- 🌱 I’m currently learning in Neural Univercity
-- 💞️ I’m looking to collaborate on reccurent neural nets to predict cost of assets on Exchange Markets
-- 📫 How to reach me - osnick1980@gmail.com
+# ReadMe file for SAMAI notebook Zindi
+This file explain how to run Google Colab notebook SAMAI_notebook_Zindi_shortData_Fin
 
-<!---
-Onic1980/Onic1980 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+#Paths
+- To set paths to  files and models you need change the paths in cell of Google Colab notebook with ref # #setting paths for files 
+#Order in which to run code
+- You need run  cells in the noutbook in order of following each other
+#Explanations of features used
+- To predict CPI categories I use only historical data of CPI categories and fixed weghts of each category
+#Environment for the code to be run
+You need to import:
+- import pandas as pd
+- import numpy as np
+- import matplotlib.pyplot as plt ( just for visualization of model training. This library don't need in inference mode)
+- datetime as datetime ( to covert data to datatime)
+- from sklearn.metrics import mean_squared_error (for model evaluating)
+- from tensorflow.keras.layers import Input, Dense, BatchNormalization,Dropout
+- from tensorflow.keras.models import Model,load_model
+- from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
+- from tensorflow.keras.optimizers import Adam
+- from tensorflow.keras.callbacks import EarlyStopping,ReduceLROnPlateau,ModelCheckpoint ( need only for model training, don't need in inference mode )
+
+#Hardware needed
+-To run this code yuo need only Google Colab
+#Expected run time for notebook.
+- it takes near 38 sec to run
+
+
+
+###End
