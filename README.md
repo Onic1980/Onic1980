@@ -4,10 +4,13 @@ This file explain how to run Google Colab notebook SAMAI_notebook_Zindi_shortDat
 
 #Paths
 - To set paths to  files and models you need change the paths in cell of Google Colab notebook with ref # #setting paths for files 
+
 #Order in which to run code
 - You need run  cells in the noutbook in order of following each other
+
 #Explanations of features used
 - To predict CPI categories I use only historical data of CPI categories and fixed weghts of each category
+
 #Environment for the code to be run
 You need to import:
 - import pandas as pd
@@ -23,6 +26,7 @@ You need to import:
 
 #Hardware needed
 -To run this code yuo need only Google Colab
+
 #Expected run time for notebook.
 - it takes near 38 sec to run
 
